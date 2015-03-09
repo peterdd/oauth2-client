@@ -89,7 +89,7 @@ class GithubTest extends \PHPUnit_Framework_TestCase
     public function testScopes()
     {
         $this->provider->setScopes(['user', 'repo']);
-        $this->assertEquals(['user', 'repo'], $this->provider->getScopes());
+        $this->assertEquals(array('user', 'repo'), $this->provider->getScopes());
     }
 
     public function testUserData()
